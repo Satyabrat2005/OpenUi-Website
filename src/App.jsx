@@ -6,10 +6,12 @@ import PricingPage from './pages/PricingPage'
 import PlatformPage from './pages/PlatformPage'
 import PrivacyPage from './pages/PrivacyPage'
 import TermsPage from './pages/TermsPage'
+import ScrollToTop from './components/ScrollToTop'
 
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
