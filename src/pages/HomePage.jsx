@@ -94,6 +94,23 @@ export default function HomePage() {
 
       <hr className="rule" />
 
+      {/* ══════════════════ APP VISUAL ══════════════════ */}
+      <section style={{ padding: '32px 0' }}>
+        <div className="wrap">
+          <div className="placeholder" style={{ height: '440px', position: 'relative' }}>
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '34px', background: '#0d0c0a', borderBottom: '1px solid var(--color-wire)', display: 'flex', alignItems: 'center', padding: '0 14px', gap: '7px' }}>
+              <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#2a2a26' }}></div>
+              <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#2a2a26' }}></div>
+              <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#2a2a26' }}></div>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: '#2a2a26', margin: '0 auto' }}>OpenUI</span>
+            </div>
+            <span>[ App screenshot / demo  ·  1160 × 440 ]</span>
+          </div>
+        </div>
+      </section>
+
+      <hr className="rule" />
+
       {/* ticker */}
       <div className="wrap" style={{ paddingTop: 0, paddingBottom: 0 }}>
         <div className="ticker">
@@ -110,23 +127,6 @@ export default function HomePage() {
           <div className="ticker-item"><b>Stripe</b>&nbsp;billing</div>
         </div>
       </div>
-
-      <hr className="rule" />
-
-      {/* ══════════════════ APP VISUAL ══════════════════ */}
-      <section style={{ padding: '32px 0' }}>
-        <div className="wrap">
-          <div className="placeholder" style={{ height: '440px', position: 'relative' }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '34px', background: '#0d0c0a', borderBottom: '1px solid var(--color-wire)', display: 'flex', alignItems: 'center', padding: '0 14px', gap: '7px' }}>
-              <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#2a2a26' }}></div>
-              <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#2a2a26' }}></div>
-              <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#2a2a26' }}></div>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: '#2a2a26', margin: '0 auto' }}>OpenUI</span>
-            </div>
-            <span>[ App screenshot / demo  ·  1160 × 440 ]</span>
-          </div>
-        </div>
-      </section>
 
       <hr className="rule" />
 
