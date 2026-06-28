@@ -24,6 +24,7 @@ export default function PrivacyPage() {
         subtitle="Your privacy matters. Learn how OpenUI collects, uses, and protects your information while providing AI-powered desktop experiences."
         lastUpdated="June 28, 2026"
         wordCount={wordCount}
+        hideActions={true}
       />
 
       <div className="wrap legal-layout-grid">

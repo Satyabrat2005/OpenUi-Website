@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function LegalHero({ title, subtitle, lastUpdated, wordCount }) {
+export default function LegalHero({ title, subtitle, lastUpdated, wordCount, hideActions }) {
   const [showTooltip, setShowTooltip] = useState(false)
   const readTime = Math.ceil(wordCount / 200) // 200 words/min average reading rate
 
@@ -29,21 +29,23 @@ export default function LegalHero({ title, subtitle, lastUpdated, wordCount }) {
             <span>{readTime} min read ({wordCount} words)</span>
           </div>
 
-          <div className="toolbar-actions">
-            <button onClick={handlePrint} className="toolbar-btn">
-              🖨 Print Page
-            </button>
-            <div className="download-btn-container" style={{ position: 'relative' }}>
-              <button onClick={handleDownload} className="toolbar-btn">
-                💾 Download PDF
+          {!hideActions && (
+            <div className="toolbar-actions">
+              <button onClick={handlePrint} className="toolbar-btn">
+                🖨 Print Page
               </button>
-              {showTooltip && (
-                <div className="pdf-tooltip font-sans">
-                  PDF generation is disabled. Please use "Print Page" and select "Save as PDF".
-                </div>
-              )}
+              <div className="download-btn-container" style={{ position: 'relative' }}>
+                <button onClick={handleDownload} className="toolbar-btn">
+                  💾 Download PDF
+                </button>
+                {showTooltip && (
+                  <div className="pdf-tooltip font-sans">
+                    PDF generation is disabled. Please use "Print Page" and select "Save as PDF".
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
